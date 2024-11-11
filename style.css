@@ -2,7 +2,8 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    border: 1px solid black
+    border: 1px solid black;
+    box-sizing: border-box;
 
 }
 
@@ -12,12 +13,18 @@
 
 #navigation > ul {
     display: flex;
-    margin: 15px 20px;
+    margin: 25px 20px;
 }
 
 #navigation > ul > li{
     list-style-type: none;
-    padding:10px
+    padding:10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navigation > ul > li > button{
+    cursor: pointer;
 }
 
 .card{

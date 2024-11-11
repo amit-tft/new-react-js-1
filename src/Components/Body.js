@@ -18,27 +18,20 @@ const Body = ()=> {
       setRestaurantsList(resData);
    }
 
-   if(restaurantsList.length===0){
-      return(
-     <div id='shimmerContainer'>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-      <ShimmerUI/>
-
-     </div>
-      )
-   }
-
-    return(
+    return restaurantsList.length===0 ? <div id='shimmerContainer'>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+    <ShimmerUI/>
+   </div>  :  (
       <div id='body'>
          <div id='search'>
          <button onClick={()=> {
